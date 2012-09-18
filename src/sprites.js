@@ -20,6 +20,14 @@ Sprites = Backbone.Model.extend({
                  'elements': {
                      'ufo' : [0, 0]
                  }
+            },
+            'guinea' : {
+                 'file' : 'web/images/guineapig.png',
+                 'tile' : 80,
+                 'tileh' : 56,
+                 'elements': {
+                     'guinea' : [0, 0]
+                 }
             }
         }
     },

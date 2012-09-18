@@ -3,18 +3,20 @@ Crafty.scene("main", function() {
         Crafty.box2D.init(0, 10, 32, true);
 
 	var elements = [
-        "src/entities/ufo.js",
+        //"src/entities/ufo.js",
+        "src/entities/guineapig.js",
         "src/interfaces/info.js"
 	];
 	
 	//when everything is loaded, run the main scene
 	require(elements, function() {	   
-		sc['ufo'] = new Ufo();
+		//sc['ufo'] = new Ufo();
+                sc['guineapig'] = new GuineaPig();
 		infc['info'] = new Info();
 	});
         
         // Create the floor
-        var floor = Crafty.e("2D, Canvas, Box2D, death")
+        var floor = Crafty.e("2D, Canvas, Box2D")
           .attr({
               isFloor: true
           })

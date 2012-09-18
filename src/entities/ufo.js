@@ -1,6 +1,6 @@
 Ufo = BaseEntity.extend({
 	defaults: {
-        'speed' : 2,
+        'speed' : 2
     },
     initialize: function(){
     	var model = this;

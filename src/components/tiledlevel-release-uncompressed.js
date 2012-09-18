@@ -44,7 +44,7 @@
           tile = Crafty.e("tile" + tDatum);
           tile.x = (i % lWidth) * tile.w;
           tile.y = (i / lWidth | 0) * tile.h;
-          tile.box2d({ bodyType: 'dynamic' }); //Add the physics!
+          tile.box2d({ bodyType: 'static' }); //Add the physics!
         }
       }
       return null;
